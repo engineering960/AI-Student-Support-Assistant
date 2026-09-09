@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Student Support Assistant</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <p>🎓 AI Student Support Assistant</p>
+            <p>Your smart study companion 🤖</p>
+        </div>
+
+        <div id="chatBox" class="chat-box">
+
+            <div class="message bot">
+                <div class="avatar">🤖</div>
+
+                <div class="text">
+                    Hello! 👋<br>
+                    I'm your AI Student Support Assistant.<br>
+                    Ask me anything about your studies!
+                </div>
+            </div>
+
+        </div>
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Type your question..."
+                autocomplete="off"
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+        <div class="suggestions">
+
+            <button onclick="quickMessage('How can I prepare for exams?')">
+                📚 Exam Preparation
+            </button>
+
+            <button onclick="quickMessage('Tell me about Python')">
+                🐍 Python
+            </button>
+
+            <button onclick="quickMessage('Give me career guidance')">
+                💼 Career
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='style.js') }}"></script>
+
+</body>
+
+</html>

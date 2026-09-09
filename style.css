@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef6ff;
+    color: #123b70;
+}
+
+/* Navigation */
+
+.navbar {
+    background: linear-gradient(90deg, #063b88, #075dcc, #0b72e7);
+    color: white;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    background: #ffffff;
+    color: #075dcc;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 480px;
+    padding: 60px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #eaf5ff, #c9e4ff);
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #063b88;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #0875e1;
+    display: block;
+}
+
+.hero h2 {
+    color: #174b86;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.start-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #06489d, #0878ed);
+    color: white;
+    text-decoration: none;
+    padding: 15px 28px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(0, 70, 150, 0.3);
+}
+
+.start-btn:hover {
+    background: #032d68;
+}
+
+
+/* Robot */
+
+.hero-image {
+    font-size: 150px;
+    text-align: center;
+    position: relative;
+}
+
+.books {
+    font-size: 60px;
+}
+
+.laptop {
+    font-size: 60px;
+}
+
+
+/* Features */
+
+.features {
+    padding: 55px 6%;
+    background: white;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 32px;
+    color: #063b88;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #55708f;
+    margin-bottom: 35px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 25px;
+    border-radius: 18px;
+    text-align: left;
+    min-height: 230px;
+    box-shadow: 0 5px 18px rgba(0, 60, 130, 0.12);
+}
+
+.card .icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    line-height: 1.5;
+    color: #496582;
+    margin-bottom: 15px;
+}
+
+.card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #075dcc;
+}
+
+.chat-card {
+    background: #e5f2ff;
+}
+
+.study-card {
+    background: #e8f8f0;
+}
+
+.career-card {
+    background: #eeeaff;
+}
+
+.course-card {
+    background: #fff3df;
+}
+
+.about-card {
+    background: #e2f8fb;
+}
+
+
+/* Footer */
+
+footer {
+    background: #032d68;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 6px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero-image {
+        font-size: 100px;
+    }
+}
+/* Study Tips Page */
+
+.page-content {
+    min-height: 650px;
+    padding: 60px 8%;
+    background: linear-gradient(135deg, #eaf5ff, #d5eaff);
+}
+
+.page-content h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #063b88;
+    margin-bottom: 15px;
+}
+
+.page-content > p {
+    text-align: center;
+    font-size: 18px;
+    color: #496582;
+    margin-bottom: 35px;
+}
+
+.tip-box {
+    max-width: 800px;
+    margin: 18px auto;
+    padding: 22px 28px;
+    background: white;
+    border-left: 6px solid #075dcc;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 60, 130, 0.12);
+}
+
+.tip-box h2 {
+    color: #063b88;
+    margin-bottom: 8px;
+}
+
+.tip-box p {
+    color: #496582;
+    line-height: 1.6;
+}
